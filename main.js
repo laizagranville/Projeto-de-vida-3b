@@ -15,3 +15,11 @@ textos[i].classList.add("ativo");
   const tempoOnjetivo3 = new Date("2023-12-01T00:00.00");
   const tempoOnjetivo4 = new Date("2024-02-01T00:00.00");
   const tempos = [tempoOnjetivo1, tempoOnjetivo2, tempoOnjetivo3, tempoOnjetivo4];
+
+  function calculeTempo(tempoOnjetivo){
+    let tempoÃtual = new Date();
+    let tempoFinal = tempoOnjetivo - tempoÃtual;
+    let segundos = Math.floor(tempoFinal/1000);
+    let minutos = Math.floor(segundos/60);
+    let horas = Math.floor(minutos/60);
+  }
